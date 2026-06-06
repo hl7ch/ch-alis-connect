@@ -1,0 +1,111 @@
+<ChargeItem xmlns="http://hl7.org/fhir">
+  <id value="ChargeItemLKAATIcdSessionB-45680" />
+  <contained>
+    <Patient>
+      <id value="pat" />
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <code value="MR" />
+          </coding>
+        </type>
+        <system value="http://www.example.ch/patienteniddomain" />
+        <value value="102" />
+      </identifier>
+      <name>
+        <family value="Tester" />
+        <given value="Paul" />
+      </name>
+      <gender value="male" />
+      <birthDate value="1982-03-22" />
+    </Patient>
+  </contained>
+  <contained>
+    <Encounter>
+      <id value="enc" />
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <code value="VN" />
+          </coding>
+        </type>
+        <system value="http://www.example.ch/fallnummerdomain" />
+        <value value="987654" />
+      </identifier>
+      <status value="finished" />
+      <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+        <code value="IMP" />
+        <display value="inpatient encounter" />
+      </class>
+      <subject>
+        <reference value="#pat" />
+      </subject>
+    </Encounter>
+  </contained>
+  <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-itemnumber">
+    <valueString value="45680" />
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-refitemnumber">
+    <valueString value="45679" />
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-orderid">
+    <valueString value="20250305-1" />
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-sessionannexb">
+    <extension url="SessionIDSectionB">
+      <valueUuid value="urn:uuid:28d92aa9-452a-459a-9baf-7c58910f2ab8" />
+    </extension>
+  </extension>
+  <status value="billable" />
+  <code>
+    <coding>
+      <system value="http://forum-datenaustausch.ch/tariff/TMA" />
+      <code value="GM.05.0020" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="#pat" />
+  </subject>
+  <context>
+    <reference value="#enc" />
+  </context>
+  <occurrenceDateTime value="2024-04-05T09:00:00Z" />
+  <performer>
+    <function>
+      <coding>
+        <system value="http://fhir.ch/ig/ch-alis-connect/CodeSystem/ch-alis-connect-persontyp" />
+        <code value="ResponsiblePhysician" />
+      </coding>
+    </function>
+    <actor>
+      <display value="7653253256988" />
+    </actor>
+  </performer>
+  <performer>
+    <function>
+      <coding>
+        <system value="http://fhir.ch/ig/ch-alis-connect/CodeSystem/ch-alis-connect-persontyp" />
+        <code value="ProvidingPhysician" />
+      </coding>
+    </function>
+    <actor>
+      <display value="7653253256988" />
+    </actor>
+  </performer>
+  <performingOrganization>
+    <display value="2400" />
+  </performingOrganization>
+  <costCenter>
+    <display value="007" />
+  </costCenter>
+  <quantity>
+    <value value="20" />
+  </quantity>
+  <enterer>
+    <display value="7653253256988" />
+  </enterer>
+  <enteredDate value="2025-03-05T10:05:36Z" />
+</ChargeItem>

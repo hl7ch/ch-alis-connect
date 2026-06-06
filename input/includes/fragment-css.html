@@ -1,0 +1,35 @@
+<!-- Child template CSS declarations (overrides template/includes/fragment-css.html) -->
+    <link href="{{site.data.info.assets}}assets/css/hl7.css" rel="stylesheet"/>
+    <link href="{{site.data.info.assets}}assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    {% if site.data.features.css.navbar %}
+    .navbar-inverse {
+        background-color: #{{site.data.features.css.navbar}};
+    }
+
+    #segment-footer .container {
+      background-color: #{{site.data.features.css.navbar}};
+    }
+    {% endif %}
+
+    {% if site.data.features.css.hover %}
+    .navbar-inverse .navbar-nav li  a:hover {
+      background-color: #{{site.data.features.css.hover}};
+    }
+    {% endif %}
+
+    {% if site.data.features.css.title %}
+    #ig-status {
+      color: #{{site.data.features.css.title}};
+    }
+    {% endif %}
+
+    /* The footer reuses the (light, CI) navbar colour, but the footer text/links
+       (white, light-blue, yellow) are designed for a dark footer. Give the footer
+       its own dark background so the footer links are readable, while the navbar
+       keeps the CI colour from features.yml. */
+    #segment-footer .container {
+      background-color: #1c3a63;
+    }
+    </style>

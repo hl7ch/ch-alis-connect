@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Visit>
+	<VisitNumber>987654</VisitNumber>
+	<PatientID>102</PatientID>
+	<PatientName>Tester</PatientName>
+	<PatientGivenName>Paul</PatientGivenName>
+	<PatientBirthDate>1982-03-22</PatientBirthDate>
+	<PatientGender>M</PatientGender>
+	<Service Transaction="insert">
+		<ServiceDate>2025-03-05T09:00:00Z</ServiceDate>
+		<OrderID>20250305-1</OrderID>
+		<ReferrerID>007</ReferrerID>
+		<ServiceType>LKAAT</ServiceType>
+		<ServiceItem>GM.00.0160</ServiceItem>
+		<EnteredDateTime>2025-03-05T10:05:36Z</EnteredDateTime>
+		<ProviderID>2400</ProviderID>
+		<EnteredBy>7653253256988</EnteredBy>
+		<ItemNumber>45678</ItemNumber>
+		<Quantity>1</Quantity>
+		<SessionSectionB>
+			<SessionIDSectionB>28d92aa9-452a-459a-9baf-7c58910f2ab8</SessionIDSectionB>
+		</SessionSectionB>
+		<Diagnosis>
+			<DiagnosisCode>B01.2</DiagnosisCode>
+			<DiagnosisSystem>ICD</DiagnosisSystem>
+			<DiagnosisVersion>ICD-10-GM 2024</DiagnosisVersion>
+		</Diagnosis>
+		<PersonV40 PersonTyp="ResponsiblePhysician">
+			<PersonID>7653253256988</PersonID>
+		</PersonV40>
+		<PersonV40 PersonTyp="ProvidingPhysician">
+			<PersonID>7653253256988</PersonID>
+		</PersonV40>
+	</Service>
+	<Service>
+		<ServiceDate>2024-04-05T09:00:00Z</ServiceDate>
+		<OrderID>20250305-1</OrderID>
+		<ReferrerID>007</ReferrerID>
+		<ServiceType>LKAAT</ServiceType>
+		<ServiceItem>GM.05.0010</ServiceItem>
+		<EnteredDateTime>2025-03-05T10:05:36Z</EnteredDateTime>
+		<ProviderID>2400</ProviderID>
+		<EnteredBy>7653253256988</EnteredBy>
+		<ItemNumber>45679</ItemNumber>
+		<Quantity>1</Quantity>
+		<SessionSectionB>
+			<SessionIDSectionB>28d92aa9-452a-459a-9baf-7c58910f2ab8</SessionIDSectionB>
+		</SessionSectionB>
+		<PersonV40 PersonTyp="ResponsiblePhysician">
+			<PersonID>7653253256988</PersonID>
+		</PersonV40>
+		<PersonV40 PersonTyp="ProvidingPhysician">
+			<PersonID>7653253256988</PersonID>
+		</PersonV40>
+	</Service>
+	<Service>
+		<ServiceDate>2024-04-05T09:00:00Z</ServiceDate>
+		<OrderID>20250305-1</OrderID>
+		<ReferrerID>007</ReferrerID>
+		<ServiceType>LKAAT</ServiceType>
+		<ServiceItem>GM.05.0020</ServiceItem>
+		<EnteredDateTime>2025-03-05T10:05:36Z</EnteredDateTime>
+		<ProviderID>2400</ProviderID>
+		<EnteredBy>7653253256988</EnteredBy>
+		<ItemNumber>45680</ItemNumber>
+		<RefItemNumber>45679</RefItemNumber>
+		<Quantity>20</Quantity>
+		<SessionSectionB>
+			<SessionIDSectionB>28d92aa9-452a-459a-9baf-7c58910f2ab8</SessionIDSectionB>
+		</SessionSectionB>
+		<PersonV40 PersonTyp="ResponsiblePhysician">
+			<PersonID>7653253256988</PersonID>
+		</PersonV40>
+		<PersonV40 PersonTyp="ProvidingPhysician">
+			<PersonID>7653253256988</PersonID>
+		</PersonV40>
+	</Service>
+</Visit>

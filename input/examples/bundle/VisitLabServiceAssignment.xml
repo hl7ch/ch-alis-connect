@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:1aa95c3d-e98c-40ca-b583-d17dcf36ba6a"/>
+    <resource>
+      <ChargeItem>
+        <id value="1aa95c3d-e98c-40ca-b583-d17dcf36ba6a"/>
+        <contained>
+          <Patient>
+            <id value="pat"/>
+            <identifier>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                  <code value="MR"/>
+                </coding>
+              </type>
+              <system value="http://www.example.ch/patienteniddomain"/>
+              <value value="102"/>
+            </identifier>
+            <name>
+              <family value="Tester"/>
+              <given value="Paul"/>
+            </name>
+            <gender value="male"/>
+            <birthDate value="1982-03-22"/>
+          </Patient>
+        </contained>
+        <contained>
+          <Encounter>
+            <id value="enc"/>
+            <identifier>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                  <code value="VN"/>
+                </coding>
+              </type>
+              <system value="http://www.example.ch/fallnummerdomain"/>
+              <value value="987654"/>
+            </identifier>
+            <status value="finished"/>
+            <class>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+              <code value="IMP"/>
+              <display value="inpatient encounter"/>
+            </class>
+            <subject>
+              <reference value="#pat"/>
+            </subject>
+          </Encounter>
+        </contained>
+        <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-itemnumber">
+          <valueString value="46784"/>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-sessionid">
+          <valueString value="1"/>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-orderid">
+          <valueString value="2025403-2"/>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-sectioncode">
+          <valueCoding>
+            <system value="http://fhir.ch/ig/ch-alis-connect/CodeSystem/swiss-medical-specialties"/>
+            <code value="M990.06"/>
+          </valueCoding>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-serviceassignment">
+          <extension url="OrderingProviderID">
+            <valueString value="7653253258966"/>
+          </extension>
+          <extension url="OrderSectionCode">
+            <valueCoding>
+              <system value="http://fhir.ch/ig/ch-alis-connect/CodeSystem/swiss-medical-specialties"/>
+              <code value="M400.04"/>
+            </valueCoding>
+          </extension>
+          <extension url="OrderDate">
+            <valueDateTime value="2025-03-03T10:05:36Z"/>
+          </extension>
+          <extension url="FollowUpOrder">
+            <valueBoolean value="false"/>
+          </extension>
+        </extension>
+        <status value="billable"/>
+        <code>
+          <coding>
+            <system value="http://forum-datenaustausch.ch/tariff/317"/>
+            <code value="1368.00"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="#pat"/>
+        </subject>
+        <context>
+          <reference value="#enc"/>
+        </context>
+        <occurrenceDateTime value="2025-03-04T09:00:00Z"/>
+        <performingOrganization>
+          <display value="2700"/>
+        </performingOrganization>
+        <costCenter>
+          <display value="007"/>
+        </costCenter>
+        <quantity>
+          <value value="1"/>
+        </quantity>
+        <enterer>
+          <display value="7653253256988"/>
+        </enterer>
+        <enteredDate value="2025-03-05T10:05:36Z"/>
+      </ChargeItem>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="ChargeItem"/>
+    </request>
+  </entry>
+</Bundle>

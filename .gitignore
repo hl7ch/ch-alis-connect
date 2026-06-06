@@ -1,0 +1,9 @@
+*.jar
+input-cache/**
+output/**
+temp/**
+template/**
+.vscode/**
+fsh-generated/**
+.DS_Store
+log

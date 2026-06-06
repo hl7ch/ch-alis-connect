@@ -1,0 +1,452 @@
+{
+	"resourceType": "ImplementationGuide",
+	"id": "ch.fhir.ig.ch-alis-connect",
+	"text": {
+		"status": "additional",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      Implementation Guide for ALIS-Connect (R4)\n    </div>"
+	},
+	"url": "http://fhir.ch/ig/ch-alis-connect/ImplementationGuide/ch.fhir.ig.ch-alis-connect",
+	"version": "1.0.0-ballot",
+	"name": "CH_ALIS",
+	"title": "CH ALIS (R4)",
+	"status": "active",
+	"experimental": false,
+	"date": "2026-06-09",
+	"publisher": "ALIS-Connect",
+	"contact": [
+		{
+			"name": "ALIS-Connect",
+			"telecom": [
+				{
+					"system": "url",
+					"value": "https://www.alis-connect.ch/"
+				}
+			]
+		}
+	],
+	"jurisdiction": [
+		{
+			"coding": [
+				{
+					"system": "urn:iso:std:iso:3166",
+					"code": "CH"
+				}
+			]
+		}
+	],
+	"copyright": "CC0-1.0",
+	"packageId": "ch.fhir.ig.ch-alis-connect",
+	"license": "CC0-1.0",
+	"fhirVersion": [
+		"4.0.1"
+	],
+	"dependsOn": [
+		{
+			"id": "chcore",
+			"uri": "http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core",
+			"packageId": "ch.fhir.ig.ch-core",
+			"version": "current"
+		}
+	],
+	"definition": {
+		"resource": [
+			{
+				"reference": {
+					"reference": "ChargeItem/ChargeItemLabServiceAssignment"
+				},
+				"name": "ALIS 5.1 FHIR  ChargeItemLabServiceAssignment",
+				"description": "ChargeItemLabServiceAssignment",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
+			},
+			{
+				"reference": {
+					"reference": "ChargeItem/ChargeItemPauschaleKomplett"
+				},
+				"name": "ALIS 5.1 FHIR  ChargeItemPauschaleKomplett",
+				"description": "ChargeItemPauschaleKomplett",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
+			},
+			{
+				"reference": {
+					"reference": "ChargeItem/ChargeItemLKAATIcd"
+				},
+				"name": "ALIS 5.1 FHIR  ChargeItemLKAATIcd",
+				"description": "ChargeItemLKAATIcd",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
+			},
+			{
+				"reference": {
+					"reference": "ChargeItem/ChargeItemLKAATIcd-45679"
+				},
+				"name": "ALIS 5.1 FHIR  ChargeItemLKAATIcd-45679",
+				"description": "ChargeItemLKAATIcd-45679",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
+			},
+			{
+				"reference": {
+					"reference": "ChargeItem/ChargeItemLKAATIcd-45680"
+				},
+				"name": "ALIS 5.1 FHIR  ChargeItemLKAATIcd-45680",
+				"description": "ChargeItemLKAATIcd-45680",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
+			},
+			{
+				"reference": {
+					"reference": "ChargeItem/ChargeItemLKAATIcdSessionB"
+				},
+				"name": "ALIS 5.1 FHIR  ChargeItemLKAATIcdSessionB",
+				"description": "ChargeItemLKAATIcdSessionB",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
+			},
+			{
+				"reference": {
+					"reference": "ChargeItem/ChargeItemLKAATIcdSessionB-45679"
+				},
+				"name": "ALIS 5.1 FHIR  ChargeItemLKAATIcdSessionB-45679",
+				"description": "ChargeItemLKAATIcdSessionB-45679",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
+			},
+			{
+				"reference": {
+					"reference": "ChargeItem/ChargeItemLKAATIcdSessionB-45680"
+				},
+				"name": "ALIS 5.1 FHIR  ChargeItemLKAATIcdSessionB-45680",
+				"description": "ChargeItemLKAATIcdSessionB-45680",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/Visit"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/Service"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/PersonV40"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ParameterV40"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/Diagnosis"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/SessionSectionB"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ServiceAssignment"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/Boolean"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/Text"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/Decimal"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/UnsignedInt"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/Date"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/DateTime"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-chargeitem"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-patient"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-encounter"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-condition"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-ext-sessionid"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-ext-orderid"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-ext-form"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-ext-termination"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "StructureDefinition/ch-alis-connect-ext-parameterv40"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "CodeSystem/ch-alis-connect-persontyp"
+				},
+				"exampleBoolean": false
+	        },
+			{
+				"reference": {
+					"reference": "CodeSystem/ch-alis-connect-paramtyp"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "CodeSystem/LKAAT"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "CodeSystem/swiss-medical-specialties"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "ValueSet/ch-alis-connect-persontyp"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "ValueSet/ch-alis-connect-paramtyp"
+				},
+				"exampleBoolean": false
+			},
+			{
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+						"valueCode": "application/fhir+xml"
+					}
+				],
+				"reference": {
+					"reference": "Binary/VisitLabServiceAssignment"
+				},
+				"name": "ALIS 5.1 XML VisitLabServiceAssignment",
+				"description": "VisitLabServiceAssignment",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit"
+			},
+			{
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+						"valueCode": "application/fhir+xml"
+					}
+				],
+				"reference": {
+					"reference": "Binary/VisitPauschaleKomplett"
+				},
+				"name": "ALIS 5.1 XML VisitPauschaleKomplett",
+				"description": "VisitPauschaleKomplett",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit"
+			},
+			{
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+						"valueCode": "application/fhir+xml"
+					}
+				],
+				"reference": {
+					"reference": "Binary/VisitLKAATIcd"
+				},
+				"name": "ALIS 5.1 XML VisitLKAATIcd",
+				"description": "VisitLKAATIcd",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit"
+			},
+			{
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+						"valueCode": "application/fhir+xml"
+					}
+				],
+				"reference": {
+					"reference": "Binary/VisitLKAATIcdSessionB"
+				},
+				"name": "ALIS 5.1 XML VisitLKAATIcdSessionB",
+				"description": "VisitLKAATIcdSessionB",
+				"exampleCanonical": "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit"
+			},
+			{
+				"reference": {
+					"reference": "ConceptMap/Alis2FhirVisit"
+				},
+				"name": "ALIS Visit to FHIR Mapping",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "ConceptMap/Alis2FhirService"
+				},
+				"name": "ALIS Service to FHIR Mapping",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "ConceptMap/Alis2FhirDiagnosis"
+				},
+				"name": "ALIS Diagnosis to FHIR Mapping",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "ConceptMap/Alis2FhirPersonV40"
+				},
+				"name": "ALIS PersonV40 to FHIR Mapping",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "ConceptMap/Alis2FhirParameterV40"
+				},
+				"name": "ALIS ParameterV40 to FHIR Mapping",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "ConceptMap/Alis2FhirServiceAssignment"
+				},
+				"name": "ALIS ServiceAssignment to FHIR Mapping",
+				"exampleBoolean": false
+			},
+			{
+				"reference": {
+					"reference": "ConceptMap/Alis2FhirSessionSectionB"
+				},
+				"name": "ALIS SessionSectionB to FHIR Mapping",
+				"exampleBoolean": false
+			}
+		],
+		"page": {
+			"nameUrl": "toc.html",
+			"title": "Table of Contents",
+			"generation": "html",
+			"page": [
+				{
+					"nameUrl": "index.html",
+					"title": "Home",
+					"generation": "markdown"
+				},
+				{
+					"nameUrl": "mapping.html",
+					"title": "Mapping",
+					"generation": "markdown"
+				},
+				{
+					"nameUrl": "profiles.html",
+					"title": "Profiles",
+					"generation": "html"
+				},
+				{
+					"nameUrl": "logicalmodels.html",
+					"title": "Logical Models",
+					"generation": "html"
+				},
+				{
+					"nameUrl": "extensions.html",
+					"title": "Extensions",
+					"generation": "html"
+				},
+				{
+					"nameUrl": "terminology.html",
+					"title": "Terminology",
+					"generation": "html"
+				},
+				{
+					"nameUrl": "changelog.html",
+					"title": "Changelog",
+					"generation": "markdown"
+				}
+			]
+		},
+		"parameter": [
+			{
+				"code": "releaselabel",
+				"value": "ballot"
+			},
+			{
+				"code": "path-pages",
+				"value": "input/pages"
+			},
+			{
+				"code": "copyrightyear",
+				"value": "2025+"
+			},
+			{
+				"code": "special-url",
+				"value": "http://forum-datenaustausch.ch/tariff/TMA"
+			}
+		]
+	}
+}
