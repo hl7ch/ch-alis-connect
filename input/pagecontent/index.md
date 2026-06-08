@@ -1,6 +1,6 @@
 ### Introduction
 
-This Implementation Guide is provided to define a Mapping between the HL7 FHIR<sup>&reg;&copy;</sup> standard and the ALIS XML 5.1 standard provided by [ALIS Connect](https://www.alis-connect.ch/).
+This Implementation Guide is provided to define a Mapping between the HL7 FHIR<sup>&reg;&copy;</sup> standard and the ALIS XML 5.1 standard provided by [ALIS Connect](https://www.alis-connect.ch/). For over 20 years, ALIS-Connect has represented for a reliable and standardized exchange of medical service data. The established interface standard ensures interoperability, security and efficiency in digital healthcare. Supported by a committed network of experts, ALIS-Connect stands for binding standardization and certified quality. The certification ensures that software solutions are correctly integrated and continuously developed further.
 
 #### The ALIS Interface
 
@@ -13,6 +13,8 @@ This Implementation Guide is provided to define a Mapping between the HL7 FHIR<s
 HL7 FHIR provides a dedicated set of [financial and administrative resources](https://www.hl7.org/fhir/financial-module.html) for representing billing and accounting information, such as `Account`, `Invoice`, `Claim` and `ChargeItem`. Among these, the `ChargeItem` resource fits closest to the information contained in a service within an ALIS Visit: it describes a single billable item — the service that was performed, the products and codes involved, the quantity and the context (patient, encounter and performer) — and is intended to be aggregated for subsequent billing. For this reason the mapping in this guide centers on `ChargeItem`, where each ALIS service of a Visit is represented as one `ChargeItem`, transmitted together within a single transaction Bundle (see [Mapping](mapping.html)).
 
 <div markdown="1" class="stu-note">
+
+This implementation guide is under informative ballot by [HL7 Switzerland](https://www.hl7.ch/de/) until September 30th, 2026 midnight. Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
 
 [Significant changes, open and closed issues](changelog.html)
 
