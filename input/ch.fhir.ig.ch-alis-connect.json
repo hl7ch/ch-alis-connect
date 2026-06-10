@@ -45,7 +45,7 @@
 			"id": "chcore",
 			"uri": "http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core",
 			"packageId": "ch.fhir.ig.ch-core",
-			"version": "7.0.x"
+			"version": "current"
 		}
 	],
 	"definition": {
@@ -251,7 +251,7 @@
 					"reference": "CodeSystem/ch-alis-connect-persontyp"
 				},
 				"exampleBoolean": false
-	        },
+			},
 			{
 				"reference": {
 					"reference": "CodeSystem/ch-alis-connect-paramtyp"
