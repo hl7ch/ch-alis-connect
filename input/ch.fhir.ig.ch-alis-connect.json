@@ -45,7 +45,7 @@
 			"id": "chcore",
 			"uri": "http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core",
 			"packageId": "ch.fhir.ig.ch-core",
-			"version": "7.0.0"
+			"version": "7.0.0-ballot"
 		}
 	],
 	"definition": {
