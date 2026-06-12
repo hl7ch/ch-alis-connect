@@ -11,7 +11,7 @@
 	"title": "CH ALIS Connect (R4)",
 	"status": "active",
 	"experimental": false,
-	"date": "2026-06-09",
+	"date": "2026-06-12",
 	"publisher": "ALIS-Connect",
 	"contact": [
 		{
@@ -45,7 +45,7 @@
 			"id": "chcore",
 			"uri": "http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core",
 			"packageId": "ch.fhir.ig.ch-core",
-			"version": "current"
+			"version": "7.0.0-ballot"
 		}
 	],
 	"definition": {
@@ -251,7 +251,7 @@
 					"reference": "CodeSystem/ch-alis-connect-persontyp"
 				},
 				"exampleBoolean": false
-	        },
+			},
 			{
 				"reference": {
 					"reference": "CodeSystem/ch-alis-connect-paramtyp"
