@@ -3,7 +3,7 @@
   "title": "CH ALIS Connect",
   "introduction": "Implementation Guide for ALIS-Connect",
   "category": "National Base",
-  "ci-build": "http://fhir.ch/ig/ch-alis-connect",
+  "ci-build": "https://build.fhir.org/ig/hl7ch/ch-alis-connect",
   "version": "1.0.0-ballot",
   "path": "http://fhir.ch/ig/ch-alis-connect/1.0.0-ballot",
   "mode": "milestone",
