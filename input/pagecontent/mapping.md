@@ -11,6 +11,8 @@ The ALIS XML structure is mirrored 1:1 by a set of **logical models**. They are 
 
 Every `Visit/Service` maps to one [ChargeItem](StructureDefinition-ch-alis-connect-chargeitem.html), and the visit- and service-level data is distributed onto the ChargeItem together with the [Patient](StructureDefinition-ch-alis-connect-patient.html), [Encounter](StructureDefinition-ch-alis-connect-encounter.html) and [Condition](StructureDefinition-ch-alis-connect-condition.html) resources. The `ChargeItem.context` references the Encounter (the Visit) and `ChargeItem.subject` the Patient, so the Visit grouping is preserved.
 
+The Encounter covers outpatient as well as inpatient visits. ALIS 5.1 supports TARDOC and outpatient flat rates, and the ALIS Visit itself does not state the setting of the case. `Encounter.class` is therefore set by the sending system from its own case data, e.g. `AMB` (ambulatory) for an outpatient case or `IMP` (inpatient encounter) for an inpatient case. The examples in this guide are outpatient cases and use `AMB`.
+
 The element-level correspondence between the ALIS logical models and the FHIR profiles is documented as **Concept Maps** (Model Maps), one per logical model. They show, side by side, each source element and the FHIR target element it maps to:
 
 * [ALIS Visit to FHIR Mapping](ConceptMap-Alis2FhirVisit.html) — Visit → Encounter, Patient, ChargeItem

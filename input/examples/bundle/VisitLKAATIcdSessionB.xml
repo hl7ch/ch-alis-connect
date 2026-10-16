@@ -44,8 +44,8 @@
             <status value="finished"/>
             <class>
               <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-              <code value="IMP"/>
-              <display value="inpatient encounter"/>
+              <code value="AMB"/>
+              <display value="ambulatory"/>
             </class>
             <subject>
               <reference value="#pat"/>
@@ -181,8 +181,8 @@
             <status value="finished"/>
             <class>
               <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-              <code value="IMP"/>
-              <display value="inpatient encounter"/>
+              <code value="AMB"/>
+              <display value="ambulatory"/>
             </class>
             <subject>
               <reference value="#pat"/>
@@ -298,8 +298,8 @@
             <status value="finished"/>
             <class>
               <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-              <code value="IMP"/>
-              <display value="inpatient encounter"/>
+              <code value="AMB"/>
+              <display value="ambulatory"/>
             </class>
             <subject>
               <reference value="#pat"/>
