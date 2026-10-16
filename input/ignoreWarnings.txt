@@ -13,8 +13,7 @@ The Implementation Guide contains no examples for this profile
 # Model Map (ConceptMap) hyperlinks in the auto-generated logical-model "Mappings" tab
 # (StructureDefinition-logicalmodel-ems-protocol-mappings.html). The IG Publisher renders
 # target element ids as links to "StructureDefinition-<profile>.html#<elementId>", but
-# profile pages anchor elements as "k-<path>.<n>", so they 404. The ConceptMap pages
-# themselves are fixed via supplied narratives (scripts/fix-conceptmap-narratives.py); this
-# generated page cannot be overridden the same way. Suppressed by message id (suppresses
-# the broken-link class globally). See https://github.com/hl7ch/ch-ems/issues/42
+# profile pages anchor elements as "k-<path>.<n>", so they 404. Since IG Publisher 3.0.1 the
+# ConceptMap pages themselves link correctly, but this generated page still does not. Suppressed
+# by message id (suppresses the broken-link class globally). See https://github.com/hl7ch/ch-ems/issues/42
 HTML_LINK_CHECK_FAILED
