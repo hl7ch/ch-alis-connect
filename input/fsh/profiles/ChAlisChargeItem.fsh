@@ -60,12 +60,18 @@ Description: "Base definition for the ChargeItem resource in the context of ALIS
 * performer.function.coding.system 1..
 * performer.function.coding.code 1..
 * performer.function.coding.code ^short = "PersonTyp"
-* performer.actor.display 1..
-* performer.actor.display ^short = "PersonID"
-* performingOrganization.display 1..
-* performingOrganization.display ^short = "ProviderID"
-* costCenter.display 1..
-* costCenter.display ^short = "ReferrerID"
+* performer.actor.identifier 1..
+* performer.actor.identifier ^short = "PersonID"
+* performer.actor.identifier ^comment = "ALIS PersonID: GLN or local ID of the person. A GLN is sent with identifier.system = urn:oid:2.51.1.3, a local ID with the identifier system of the sender."
+* performer.actor.identifier.value 1..
+* performingOrganization.identifier 1..
+* performingOrganization.identifier ^short = "ProviderID"
+* performingOrganization.identifier ^comment = "ALIS ProviderID: GLN or local ID of the providing organization or cost centre. A GLN is sent with identifier.system = urn:oid:2.51.1.3, a local ID with the identifier system of the sender."
+* performingOrganization.identifier.value 1..
+* costCenter.identifier 1..
+* costCenter.identifier ^short = "ReferrerID"
+* costCenter.identifier ^comment = "ALIS ReferrerID: GLN or local ID of the ordering cost centre. A GLN is sent with identifier.system = urn:oid:2.51.1.3, a local ID with the identifier system of the sender."
+* costCenter.identifier.value 1..
 * quantity 1..
 * quantity.value 1..
 * quantity.value ^short = "Quantity"
@@ -73,6 +79,7 @@ Description: "Base definition for the ChargeItem resource in the context of ALIS
 * priceOverride.value ^short = "ParameterV40: Amount"
 * enterer.display 1..
 * enterer.display ^short = "EnteredBy"
+* enterer.display ^comment = "ALIS EnteredBy can be a name or an ID, so it is conveyed as display text."
 * enteredDate ^short = "EnteredDateTime"
 * supportingInformation only Reference($bmi)
 * supportingInformation ^short = "ParameterV40: BMI"

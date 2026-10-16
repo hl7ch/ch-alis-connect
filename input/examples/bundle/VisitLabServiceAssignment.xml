@@ -99,10 +99,16 @@
         </context>
         <occurrenceDateTime value="2025-03-04T09:00:00Z"/>
         <performingOrganization>
-          <display value="2700"/>
+          <identifier>
+            <system value="http://www.example.ch/organisationdomain"/>
+            <value value="2700"/>
+          </identifier>
         </performingOrganization>
         <costCenter>
-          <display value="007"/>
+          <identifier>
+            <system value="http://www.example.ch/kostenstellendomain"/>
+            <value value="007"/>
+          </identifier>
         </costCenter>
         <quantity>
           <value value="1"/>
