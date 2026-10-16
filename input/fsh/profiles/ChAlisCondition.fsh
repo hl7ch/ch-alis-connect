@@ -17,5 +17,8 @@ Description: "Base definition for the Condition resource in the context of ALIS-
 * subject ^short = "Patient"
 * subject ^type.aggregation = #contained
 * subject.reference 1..
-* bodySite 0..1 // TODO add ValueSet Binding left right both
+* bodySite 0..1
+* bodySite from ChAlisLateralitySnomed (required)
+* bodySite ^short = "Laterality"
+* bodySite ^comment = "ALIS Diagnosis Laterality (l, r, b), mapped to SNOMED CT with the ConceptMap ChAlisLateralityToSnomed: l = 7771000 |Left|, r = 24028007 |Right|, b = 51440002 |Right and left|."
 * recordedDate 0..1

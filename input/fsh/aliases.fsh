@@ -5,3 +5,4 @@ Alias: $bmi = http://hl7.org/fhir/StructureDefinition/bmi
 Alias: $LKAAT = http://forum-datenaustausch.ch/tariff/TMA
 Alias: $SwissMedicalSpecialties = http://fhir.ch/ig/ch-alis-connect/CodeSystem/swiss-medical-specialties
 Alias: $ch-ext-indication-code = http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epl-regulated-authorization-limitation-indication-code
+Alias: $sct = http://snomed.info/sct
