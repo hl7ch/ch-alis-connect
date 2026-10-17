@@ -446,6 +446,10 @@
 			{
 				"code": "special-url",
 				"value": "http://forum-datenaustausch.ch/tariff/TMA"
+			},
+			{
+				"code": "path-expansion-params",
+				"value": "../expansion-params.json"
 			}
 		]
 	}
