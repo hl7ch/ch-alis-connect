@@ -69,7 +69,10 @@
         </extension>
         <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-serviceassignment">
           <extension url="OrderingProviderID">
-            <valueString value="7653253258966"/>
+            <valueIdentifier>
+              <system value="urn:oid:2.51.1.3"/>
+              <value value="7653253258966"/>
+            </valueIdentifier>
           </extension>
           <extension url="OrderSectionCode">
             <valueCoding>
