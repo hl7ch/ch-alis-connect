@@ -19,7 +19,8 @@ Context: ChargeItem
 * extension[OrderSectionCode] ^short = "OrderSectionCode"
 * extension[OrderSectionCode].url only uri
 * extension[OrderSectionCode].valueCoding 1..
-* extension[OrderSectionCode].valueCoding from SwissMedicalSpecialities (required)
+* extension[OrderSectionCode].valueCoding from SwissMedicalSpecialities (extensible)
+* extension[OrderSectionCode].valueCoding ^binding.description = "Extensible: the SwissMedicalSpecialities CodeSystem is a fragment of the 'Reglement Fachbereiche inkl. Liste der Fachbereiche' and only lists the codes referenced in this guide. Other codes from the Reglement Fachbereiche may be used."
 * extension[OrderDate] only Extension
 * extension[OrderDate] ^short = "OrderDate"
 * extension[OrderDate].url only uri
