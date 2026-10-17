@@ -16,21 +16,21 @@ Usage: #definition
 
 * group[0].source = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Diagnosis"
 * group[=].target = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-condition"
-* group[=].element[0].code = #Diagnosis.DiagnosisCode
+* group[=].element[0].code = #Diagnosis.diagnosisCode
 * group[=].element[=].target.code = #Condition.code.coding.code
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Diagnosis.DiagnosisSystem
+* group[=].element[+].code = #Diagnosis.diagnosisSystem
 * group[=].element[=].target.code = #Condition.code.coding.system
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Diagnosis.DiagnosisVersion
+* group[=].element[+].code = #Diagnosis.diagnosisVersion
 * group[=].element[=].target.code = #Condition.code.coding.version
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Diagnosis.DiagnosisConfidential
+* group[=].element[+].code = #Diagnosis.diagnosisConfidential
 * group[=].element[=].target.code = #Condition.extension:DiagnosisConfidential
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Diagnosis.OnSetDateTime
+* group[=].element[+].code = #Diagnosis.onSetDateTime
 * group[=].element[=].target.code = #"Condition.onset[x]:onsetDateTime"
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Diagnosis.Laterality
+* group[=].element[+].code = #Diagnosis.laterality
 * group[=].element[=].target.code = #Condition.bodySite
 * group[=].element[=].target.equivalence = #equivalent

@@ -2,6 +2,8 @@ CodeSystem: ChAlisParamTyp
 Id: ch-alis-connect-paramtyp
 Title: "CH ALIS ParamTyp"
 Description: "This code system defines the ParamTyp."
+* ^experimental = false
+* ^caseSensitive = true
 * ^content = #complete
 * #Duration
 * #Length

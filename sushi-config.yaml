@@ -1,0 +1,116 @@
+id: ch.fhir.ig.ch-alis-connect
+canonical: http://fhir.ch/ig/ch-alis-connect
+url: http://fhir.ch/ig/ch-alis-connect/ImplementationGuide/ch.fhir.ig.ch-alis-connect
+name: CH_ALIS_CONNECT
+title: CH ALIS Connect (R4)
+status: active
+experimental: false
+date: 2026-06-12
+version: 1.0.0-ballot
+fhirVersion: 4.0.1
+copyrightYear: 2025+
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+publisher:
+  name: ALIS-Connect
+  url: https://www.alis-connect.ch/
+license: CC0-1.0
+copyright: CC0-1.0
+jurisdiction: urn:iso:std:iso:3166#CH
+
+dependencies:
+  ch.fhir.ig.ch-core:
+    id: chcore
+    uri: http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core
+    version: 7.0.0-ballot
+
+pages:
+  index.md:
+    title: Home
+  mapping.md:
+    title: Mapping
+  profiles.xml:
+    title: Profiles
+  logicalmodels.xml:
+    title: Logical Models
+  extensions.xml:
+    title: Extensions
+  terminology.xml:
+    title: Terminology
+  changelog.md:
+    title: Changelog
+
+# the menu is maintained in input/includes/menu.xml
+
+resources:
+  ChargeItem/ChargeItemLabServiceAssignment:
+    name: ALIS 5.1 FHIR  ChargeItemLabServiceAssignment
+    description: ChargeItemLabServiceAssignment
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem
+  ChargeItem/ChargeItemPauschaleKomplett:
+    name: ALIS 5.1 FHIR  ChargeItemPauschaleKomplett
+    description: ChargeItemPauschaleKomplett
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem
+  ChargeItem/ChargeItemLKAATIcd:
+    name: ALIS 5.1 FHIR  ChargeItemLKAATIcd
+    description: ChargeItemLKAATIcd
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem
+  ChargeItem/ChargeItemLKAATIcd-45679:
+    name: ALIS 5.1 FHIR  ChargeItemLKAATIcd-45679
+    description: ChargeItemLKAATIcd-45679
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem
+  ChargeItem/ChargeItemLKAATIcd-45680:
+    name: ALIS 5.1 FHIR  ChargeItemLKAATIcd-45680
+    description: ChargeItemLKAATIcd-45680
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem
+  ChargeItem/ChargeItemLKAATIcdSessionB:
+    name: ALIS 5.1 FHIR  ChargeItemLKAATIcdSessionB
+    description: ChargeItemLKAATIcdSessionB
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem
+  ChargeItem/ChargeItemLKAATIcdSessionB-45679:
+    name: ALIS 5.1 FHIR  ChargeItemLKAATIcdSessionB-45679
+    description: ChargeItemLKAATIcdSessionB-45679
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem
+  ChargeItem/ChargeItemLKAATIcdSessionB-45680:
+    name: ALIS 5.1 FHIR  ChargeItemLKAATIcdSessionB-45680
+    description: ChargeItemLKAATIcdSessionB-45680
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem
+  # ALIS 5.1 XML files (input/resources/binary), examples of the logical model Visit
+  Binary/VisitLabServiceAssignment:
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+xml
+    name: ALIS 5.1 XML VisitLabServiceAssignment
+    description: VisitLabServiceAssignment
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit
+  Binary/VisitPauschaleKomplett:
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+xml
+    name: ALIS 5.1 XML VisitPauschaleKomplett
+    description: VisitPauschaleKomplett
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit
+  Binary/VisitLKAATIcd:
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+xml
+    name: ALIS 5.1 XML VisitLKAATIcd
+    description: VisitLKAATIcd
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit
+  Binary/VisitLKAATIcdSessionB:
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+xml
+    name: ALIS 5.1 XML VisitLKAATIcdSessionB
+    description: VisitLKAATIcdSessionB
+    exampleCanonical: http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit
+
+# For parameters defined by core FHIR see:
+# http://build.fhir.org/codesystem-guide-parameter-code.html.
+# For parameters defined by the FHIR Tools IG  see:
+# http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
+parameters:
+  path-pages: input/pages
+  special-url: http://forum-datenaustausch.ch/tariff/TMA
+  path-expansion-params: '../../expansion-params.json'  # for using SNOMED CT Swiss Extension
+
+FSHOnly: false

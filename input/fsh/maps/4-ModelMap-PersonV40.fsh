@@ -19,9 +19,9 @@ Usage: #definition
 * group[=].element[0].code = #PersonV40
 * group[=].element[=].target.code = #ChargeItem.performer
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #PersonV40.PersonTyp
+* group[=].element[+].code = #PersonV40.personTyp
 * group[=].element[=].target.code = #ChargeItem.performer.function.coding.code
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #PersonV40.PersonID
+* group[=].element[+].code = #PersonV40.personID
 * group[=].element[=].target.code = #ChargeItem.performer.actor.identifier.value
 * group[=].element[=].target.equivalence = #equivalent

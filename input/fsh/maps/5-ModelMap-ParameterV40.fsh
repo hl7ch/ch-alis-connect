@@ -17,10 +17,10 @@ Usage: #definition
 
 * group[0].source = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ParameterV40"
 * group[=].target = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-parameterv40"
-* group[=].element[0].code = #ParameterV40.ParamTyp
+* group[=].element[0].code = #ParameterV40.paramTyp
 * group[=].element[=].target.code = #"Extension.extension:ParamTyp.value[x]:valueCodeableConcept"
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #ParameterV40.ParamValue
+* group[=].element[+].code = #ParameterV40.paramValue
 * group[=].element[=].target.code = #"Extension.extension:ParamValue.value[x]:valueString"
 * group[=].element[=].target.equivalence = #equivalent
 

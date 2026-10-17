@@ -3,7 +3,7 @@ Parent: $Base
 Id: Decimal
 Title: "CH ALIS Data Type Decimal"
 Description: "Data Type Decimal"
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace"
+* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace"
 * ^extension.valueUri = "noNamespace"
 * . ^definition = "Decimal"
 * data 1..1 decimal "Decimal"

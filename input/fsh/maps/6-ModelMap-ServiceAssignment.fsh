@@ -16,15 +16,15 @@ Usage: #definition
 
 * group[0].source = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ServiceAssignment"
 * group[=].target = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-serviceassignment"
-* group[=].element[0].code = #ServiceAssignment.OrderingProviderID
+* group[=].element[0].code = #ServiceAssignment.orderingProviderID
 * group[=].element[=].target.code = #"Extension.extension:OrderingProviderID.value[x]:valueIdentifier.value"
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #ServiceAssignment.OrderSectionCode
+* group[=].element[+].code = #ServiceAssignment.orderSectionCode
 * group[=].element[=].target.code = #"Extension.extension:OrderSectionCode.value[x]:valueCoding"
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #ServiceAssignment.OrderDate
+* group[=].element[+].code = #ServiceAssignment.orderDate
 * group[=].element[=].target.code = #"Extension.extension:OrderDate.value[x]:valueDateTime"
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #ServiceAssignment.FollowUpOrder
+* group[=].element[+].code = #ServiceAssignment.followUpOrder
 * group[=].element[=].target.code = #"Extension.extension:FollowUpOrder.value[x]:valueBoolean"
 * group[=].element[=].target.equivalence = #equivalent

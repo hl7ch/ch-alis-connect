@@ -16,9 +16,9 @@ Usage: #definition
 
 * group[0].source = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/SessionSectionB"
 * group[=].target = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-sessionannexb"
-* group[=].element[0].code = #SessionSectionB.SessionIDSectionB
+* group[=].element[0].code = #SessionSectionB.sessionIDSectionB
 * group[=].element[=].target.code = #"Extension.extension:SessionIDSectionB.value[x]:valueUuid"
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #SessionSectionB.AssignedSessionSectionB
+* group[=].element[+].code = #SessionSectionB.assignedSessionSectionB
 * group[=].element[=].target.code = #"Extension.extension:AssignedSessionSectionB.value[x]:valueUuid"
 * group[=].element[=].target.equivalence = #equivalent

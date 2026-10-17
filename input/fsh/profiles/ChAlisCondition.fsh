@@ -13,6 +13,8 @@ Description: "Base definition for the Condition resource in the context of ALIS-
 * code.coding.system ^short = "DiagCatType"
 * code.coding.code 1..
 * code.coding.code ^short = "DiagCode"
+* code.coding.version ^short = "DiagnosisVersion"
+* code.coding.version ^comment = "Version of the code system as published by its terminology server, e.g. 2024 for the ALIS DiagnosisVersion 'ICD-10-GM 2024' (http://fhir.de/CodeSystem/bfarm/icd-10-gm). In Switzerland, ICD-10-GM 2024 applies from 1 January 2025."
 * subject only Reference(ChAlisPatient)
 * subject ^short = "Patient"
 * subject ^type.aggregation = #contained
