@@ -6,6 +6,13 @@
     {% include list-simple-valuesets.xhtml %}
   </div>
 
+  <h3>ConceptMaps</h3>
+  <div>
+    <ul>
+      <li><a href="ConceptMap-ChAlisLateralityToSnomed.html">CH ALIS Laterality to SNOMED CT</a>: maps the ALIS Diagnosis Laterality (l, r, b) to the SNOMED CT codes used in <code>Condition.bodySite</code>.</li>
+    </ul>
+  </div>
+
   <h3>CodeSystems</h3>
   <div>
     {% include list-simple-codesystems.xhtml %}
