@@ -3,7 +3,7 @@ Parent: $Base
 Id: ParameterV40
 Title: "CH ALIS Leistungsschnittstelle - ParameterV40"
 Description: "This logical model describes the ParameterV40 of 'Leistungsschnittstelle ALIS Version 5.1'."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace"
+* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace"
 * ^extension.valueUri = "noNamespace"
 * . ^definition = "4, ParameterV40, Optional (0,N)"
 * paramTyp 1..1 string "4.1, ParamTyp, Alphanum., Obligatorisch"

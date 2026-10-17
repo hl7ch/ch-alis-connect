@@ -3,7 +3,7 @@ Parent: $Base
 Id: Header
 Title: "CH ALIS Leistungsschnittstelle - Header"
 Description: "This logical model describes the Header of 'Leistungsschnittstelle ALIS Version 5.1', the root element of an ALIS XML file that carries the Visits."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace"
+* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace"
 * ^extension.valueUri = "noNamespace"
 * . ^definition = "1, HeaderInformation"
 * version 0..1 decimal "Optional according to specification, and required according to XSD" "1, Header-Attribut Version"
@@ -11,7 +11,7 @@ Description: "This logical model describes the Header of 'Leistungsschnittstelle
 * version ^representation = #xmlAttr
 * noNamespaceSchemaLocation 0..1 string "xsi"
 * noNamespaceSchemaLocation ^representation = #xmlAttr
-* noNamespaceSchemaLocation ^extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace"
+* noNamespaceSchemaLocation ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace"
 * noNamespaceSchemaLocation ^extension.valueUri = "http://www.w3.org/2001/XMLSchema-instance"
 * receivingApplication 1..1 http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Text "1.1, Empfänger, Alphanum. (30), Text, 3 stufig"
 * receivingApplication insert XmlName(ReceivingApplication)

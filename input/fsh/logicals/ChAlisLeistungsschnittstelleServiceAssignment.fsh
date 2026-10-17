@@ -3,7 +3,7 @@ Parent: $Base
 Id: ServiceAssignment
 Title: "CH ALIS Leistungsschnittstelle - ServiceAssignment"
 Description: "This logical model describes the ServiceAssignment of 'Leistungsschnittstelle ALIS Version 5.1'."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace"
+* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace"
 * ^extension.valueUri = "noNamespace"
 * . ^definition = "3.21(*) 	Leistungszuordnung		Zuordnung von Labor-, Pathologie- oder Berichtsleistungen gemäss Tarifvertrag Anhang B, Kapitel 4	Optional	ServiceAssignment"
 * orderingProviderID 0..1 http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Text "3.21.1 (*)	Auftraggeber 	Alphanum.	OE	Optional	OrderingProviderID"

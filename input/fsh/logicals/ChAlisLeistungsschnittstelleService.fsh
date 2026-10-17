@@ -3,7 +3,7 @@ Parent: $Base
 Id: Service
 Title: "CH ALIS Leistungsschnittstelle - Service"
 Description: "This logical model describes the Service of 'Leistungsschnittstelle ALIS Version 5.1'."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace"
+* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace"
 * ^extension.valueUri = "noNamespace"
 * . ^definition = "3, Leistung, Leistungen stehen zum Patient im Verhltnis 1:N"
 * transaction 0..1 string "Optional, only required for possible value delete" "3.1, Transaktion, Alphanum., Attribut im Knoten „Leistung“, Kennzeichen der Transaktion (insert, update, delete), Optional"

@@ -3,7 +3,7 @@ Parent: $Base
 Id: Diagnosis
 Title: "CH ALIS Leistungsschnittstelle - Diagnosis"
 Description: "This logical model describes the Diagnosis of 'Leistungsschnittstelle ALIS Version 5.1'."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace"
+* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace"
 * ^extension.valueUri = "noNamespace"
 * . ^definition = "3.20 (*)	Diagnose Optional "
 * diagnosisCode 1..1 http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Text "3.20.1 (*)	Diagnosecode	Alphanum.	Diagnosecode [mind. 2 Zeichen, ICDx 5 Zeichen - abhängig von vereinbarter Codeversion, Originalschreibweise mit Punkten etc.]	Obligatorisch"

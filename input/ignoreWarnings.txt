@@ -1,11 +1,10 @@
 == Suppressed Messages ==
 
-# Allow upper case for logical models
-eld-20: Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken [path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*')]
-
-# The ConceptMap has no name, the name is not required
-cmd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-
 # The examples of the contained resources are shown in the resources they contain
 The Implementation Guide contains no explicitly linked examples for this profile
-The Implementation Guide contains no examples for this profile
+
+# ICD-10-GM 2024 applies in Switzerland from 1 January 2025 (BFS), so the examples code their
+# diagnoses with version 2024. tx.fhir.de only provides the ICD-10-GM versions 2025 and 2026,
+# so these codes cannot be validated there.
+A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' version '2024' could not be found, so the code cannot be validated. Valid versions: [2025, 2026]
+Unable to check whether the code is in the value set '' because the code system http://fhir.de/CodeSystem/bfarm/icd-10-gm|2024 was not found

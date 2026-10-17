@@ -3,7 +3,7 @@ Parent: $Base
 Id: Visit
 Title: "CH ALIS Leistungsschnittstelle - Visit"
 Description: "This logical model describes the Visit of 'Leistungsschnittstelle ALIS Version 5.1'."
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace"
+* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/xml-namespace"
 * ^extension.valueUri = "noNamespace"
 * . ^definition = "2, Patient"
 * visitNumber 1..1 http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Text "2.1, Fall, Alphanum. Max. 40 Zeichen, FID = eindeutiger Schlüssel (ev. Kombination aus PID und lfd. Nr.), der FID ist eindeutig, Obligatorisch"

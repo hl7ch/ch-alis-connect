@@ -34,7 +34,7 @@ One logical model per XSD `complexType`, in [input/fsh/logicals/](input/fsh/logi
 | —     | DiagGroup        | `ChAlisLeistungsschnittstelleDiagGroup.fsh` (4.3 legacy) |
 
 Conventions used in these logical models:
-- `Parent: $Base`, with the `elementdefinition-namespace` / `noNamespace` extension so the
+- `Parent: $Base`, with the `xml-namespace` extension (`http://hl7.org/fhir/tools/StructureDefinition/xml-namespace`) with the value `noNamespace` so the
   models serialize back to plain ALIS XML (attributes use `^representation = #xmlAttr`).
 - Element names are lowerCamelCase (`diagnosisCode`), as FHIR requires (eld-20). Each element
   carries the ALIS XML name (`DiagnosisCode`) via `insert XmlName(...)` (the `xml-name` extension,
