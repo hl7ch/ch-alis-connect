@@ -5,8 +5,8 @@ Description: "This extension describes the ParameterV40 with ParamTyp and ParamV
 Context: ChargeItem
 * . ^short = "CH ALIS Extension ParamV40"
 * extension contains
-    ParamTyp 0..1 and
-    ParamValue 0..1
+    ParamTyp 1..1 and
+    ParamValue 1..1
 * extension[ParamTyp] only Extension
 * extension[ParamTyp] ^short = "ParamTyp"
 * extension[ParamTyp].url only uri
