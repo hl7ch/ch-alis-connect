@@ -20,13 +20,13 @@ This implementation guide is under informative ballot by [HL7 Switzerland](https
 
 </div>
 
-**Download**: You can download this implementation guide in npm format from [here](package.tgz).
+**Download**: You can download this implementation guide in npm format from [here](../package.tgz).
 
 ### Scope
 This document presents ALIS-connect use concepts defined via FHIR processable artefacts:
 
 * [Logical Models](logicalmodels.html) - is the mapping of the ALIS-Connect XML specification
-* [Maps](maps.html) - are defined rules that describe how the ALIS-Connect XML structure relates to the FHIR structure
+* [Maps](mapping.html) - are defined rules that describe how the ALIS-Connect XML structure relates to the FHIR structure
 * [Profiles](profiles.html) - are useful constraints of FHIR resources for ALIS-connect use
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed ALIS-connect concepts
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for ALIS-connect context

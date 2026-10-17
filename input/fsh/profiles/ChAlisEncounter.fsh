@@ -28,3 +28,6 @@ Description: "Base definition for the Encounter resource in the context of ALIS-
 * diagnosis.condition only Reference(ChAlisCondition)
 * diagnosis.condition ^type.aggregation = #contained
 * diagnosis.condition.reference 1..
+// CH Core 7.0.0-ballot binds v2-0092|2.9, a version no hl7.terminology package contains;
+// 2.0.0 is the version in hl7.terminology.r4#7.0.1 used by this build
+* hospitalization.reAdmission from http://terminology.hl7.org/ValueSet/v2-0092|2.0.0 (example)
