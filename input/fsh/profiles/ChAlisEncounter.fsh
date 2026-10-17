@@ -18,8 +18,8 @@ Description: "Base definition for the Encounter resource in the context of ALIS-
 // * identifier.value[VisitNumber] ^short = "VisitNumber"
 * status = #finished (exactly)
 * status ^short = "finished"
-* class = $v3-ActCode#IMP
-* class ^short = "Inpatient encounter"
+* class ^short = "Setting of the visit, e.g. AMB (outpatient) or IMP (inpatient)"
+* class ^comment = "ALIS 5.1 covers both outpatient (TARDOC, outpatient flat rates) and inpatient services. The ALIS Visit does not carry the setting, so the sending system sets Encounter.class from its own case data, e.g. AMB for an outpatient case and IMP for an inpatient case."
 * subject only Reference(ChAlisPatient)
 * subject ^short = "Patient"
 * subject ^type.aggregation = #contained
