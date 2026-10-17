@@ -18,6 +18,8 @@ Resolution of the comments from the informative ballot 1.0.0-ballot, see [ballot
 #### Fixed
 * [#11](https://github.com/hl7ch/ch-alis-connect/issues/11), [#12](https://github.com/hl7ch/ch-alis-connect/issues/12): The Type columns of the Concept Maps show the element types instead of "todo" (IG Publisher 3.0.1).
 * Unique titles for the ParamTyp and PersonTyp ValueSets, a resolvable version of the v2-0092 ValueSet bound to `Encounter.hospitalization.reAdmission`, and broken links on the index page.
+* The elements of the logical models are named in lowerCamelCase (e.g. `Diagnosis.diagnosisCode`), as required for FHIR element names, and carry the ALIS XML name (e.g. `DiagnosisCode`) in the [xml-name](https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-xml-name.html) extension. ALIS XML documents are unchanged and validate as before; the element ids, and with them the JSON form of the logical models and the source codes of the Concept Maps, change.
+* The home page includes the IP statements, the cross version analysis and the dependency table.
 
 ### 1.0.0-ballot 
 

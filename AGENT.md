@@ -36,6 +36,10 @@ One logical model per XSD `complexType`, in [input/fsh/logicals/](input/fsh/logi
 Conventions used in these logical models:
 - `Parent: $Base`, with the `elementdefinition-namespace` / `noNamespace` extension so the
   models serialize back to plain ALIS XML (attributes use `^representation = #xmlAttr`).
+- Element names are lowerCamelCase (`diagnosisCode`), as FHIR requires (eld-20). Each element
+  carries the ALIS XML name (`DiagnosisCode`) via `insert XmlName(...)` (the `xml-name` extension,
+  RuleSet in [input/fsh/RuleSets.fsh](input/fsh/RuleSets.fsh)), so ALIS XML still parses and validates.
+  Without it, the ALIS XML examples fail with "Undefined element".
 - Leaf fields point at **custom datatype logicals** (`Text`, `Date`, `DateTime`, `Decimal`,
   `UnsignedInt`, `Boolean`) under canonical `http://fhir.ch/ig/ch-alis-connect/StructureDefinition/...`.
 - Each element's `short` text carries the doc table coordinates (e.g. `"3.20.1 (*) Diagnosecode …"`)

@@ -19,38 +19,38 @@ Usage: #definition
 * group[=].element[0].code = #Visit
 * group[=].element[=].target.code = #Encounter
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Visit.VisitNumber
+* group[=].element[+].code = #Visit.visitNumber
 * group[=].element[=].target.code = #Encounter.identifier.value
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Visit.TerminationVisit
+* group[=].element[+].code = #Visit.terminationVisit
 * group[=].element[=].target.code = #Encounter.extension:Termination
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Visit.TerminationReason
+* group[=].element[+].code = #Visit.terminationReason
 * group[=].element[=].target.code = #Encounter.extension:Termination
 * group[=].element[=].target.equivalence = #equivalent
 
 // Visit -> CH ALIS Patient
 * group[+].source = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit"
 * group[=].target = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-patient"
-* group[=].element[0].code = #Visit.PatientID
+* group[=].element[0].code = #Visit.patientID
 * group[=].element[=].target.code = #Patient.identifier:LocalPid.value
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Visit.PatientName
+* group[=].element[+].code = #Visit.patientName
 * group[=].element[=].target.code = #Patient.name.family
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Visit.PatientGivenName
+* group[=].element[+].code = #Visit.patientGivenName
 * group[=].element[=].target.code = #Patient.name.given
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Visit.PatientGender
+* group[=].element[+].code = #Visit.patientGender
 * group[=].element[=].target.code = #Patient.gender
 * group[=].element[=].target.equivalence = #equivalent
-* group[=].element[+].code = #Visit.PatientBirthDate
+* group[=].element[+].code = #Visit.patientBirthDate
 * group[=].element[=].target.code = #Patient.birthDate
 * group[=].element[=].target.equivalence = #equivalent
 
 // Visit -> CH ALIS ChargeItem (each Service becomes one ChargeItem)
 * group[+].source = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit"
 * group[=].target = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
-* group[=].element[0].code = #Visit.Service
+* group[=].element[0].code = #Visit.service
 * group[=].element[=].target.code = #ChargeItem
 * group[=].element[=].target.equivalence = #equivalent
