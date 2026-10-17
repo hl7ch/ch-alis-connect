@@ -24,10 +24,10 @@ Usage: #definition
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[+].code = #Visit.terminationVisit
 * group[=].element[=].target.code = #Encounter.extension:Termination
-* group[=].element[=].target.equivalence = #equivalent
+* group[=].element[=].target.equivalence = #wider
 * group[=].element[+].code = #Visit.terminationReason
 * group[=].element[=].target.code = #Encounter.extension:Termination
-* group[=].element[=].target.equivalence = #equivalent
+* group[=].element[=].target.equivalence = #wider
 
 // Visit -> CH ALIS Patient
 * group[+].source = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit"
@@ -53,4 +53,14 @@ Usage: #definition
 * group[=].target = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-chargeitem"
 * group[=].element[0].code = #Visit.service
 * group[=].element[=].target.code = #ChargeItem
+* group[=].element[=].target.equivalence = #equivalent
+
+// Visit -> CH ALIS Extension Termination (on Encounter): the fields of the extension
+* group[+].source = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Visit"
+* group[=].target = "http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-termination"
+* group[=].element[0].code = #Visit.terminationVisit
+* group[=].element[=].target.code = #"Extension.extension:TerminationVisit.value[x]:valueDate"
+* group[=].element[=].target.equivalence = #equivalent
+* group[=].element[+].code = #Visit.terminationReason
+* group[=].element[=].target.code = #"Extension.extension:TerminationReason.value[x]:valueString"
 * group[=].element[=].target.equivalence = #equivalent

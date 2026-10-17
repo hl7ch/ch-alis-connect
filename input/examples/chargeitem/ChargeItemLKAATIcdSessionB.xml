@@ -56,7 +56,7 @@
       <code>
         <coding>
           <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm" />
-          <version value="ICD-10-GM 2024" />
+          <version value="2024" />
           <code value="B01.2" />
         </coding>
       </code>

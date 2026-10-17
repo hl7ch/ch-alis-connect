@@ -20,7 +20,9 @@ Resolution of the comments from the informative ballot 1.0.0-ballot, see [ballot
 * Unique titles for the ParamTyp and PersonTyp ValueSets, a resolvable version of the v2-0092 ValueSet bound to `Encounter.hospitalization.reAdmission`, and broken links on the index page.
 * The elements of the logical models are named in lowerCamelCase (e.g. `Diagnosis.diagnosisCode`), as required for FHIR element names, and carry the ALIS XML name (e.g. `DiagnosisCode`) in the [xml-name](https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-xml-name.html) extension. ALIS XML documents are unchanged and validate as before; the element ids, and with them the JSON form of the logical models and the source codes of the Concept Maps, change.
 * The home page includes the IP statements, the cross version analysis and the dependency table.
-* The ValueSets and CodeSystems declare `experimental = false`, and the example identifier systems use `http://www.example.org/` instead of `http://www.example.ch/`.
+* The ValueSets and CodeSystems declare `experimental = false` (and the CodeSystems `caseSensitive = true`), and the example identifier systems use `http://www.example.org/` instead of `http://www.example.ch/`.
+* The ICD-10-GM codings in the examples state the code system version as published (`2024` instead of `ICD-10-GM 2024`), and `ChAlisCondition.code.coding.version` explains the conversion from the ALIS DiagnosisVersion.
+* Concept Map ALIS Visit: TerminationVisit and TerminationReason map to the fields of the Termination extension; their mapping to the whole extension is `wider` instead of `equivalent`.
 
 ### 1.0.0-ballot 
 

@@ -3,6 +3,7 @@ Id: ch-alis-connect-persontyp
 Title: "CH ALIS PersonTyp"
 Description: "This code system defines the PersonTyp."
 * ^experimental = false
+* ^caseSensitive = true
 * ^content = #complete
 * #ResponsiblePhysician
 * #ProvidingPhysician
