@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 Resolution of the comments from the informative ballot 1.0.0-ballot, see [ballot overview](https://github.com/hl7ch/ch-alis-connect/blob/main/ballots/1.0.0-ballot.md).
 
 #### Added
+* Logical model [Header](StructureDefinition-Header.html), the root element of an ALIS XML file (header information and the Visits), so that complete ALIS XML files can be validated, e.g. with matchbox.
 * [#8](https://github.com/hl7ch/ch-alis-connect/issues/8): `Condition.bodySite` is bound (extensible) to the new ValueSet [CH ALIS Laterality (SNOMED CT)](ValueSet-ch-alis-connect-laterality-snomed.html) (Left, Right, Right and left). The new CodeSystem [CH ALIS Laterality](CodeSystem-ch-alis-connect-laterality.html) holds the ALIS values l, r, b, and the ConceptMap [CH ALIS Laterality to SNOMED CT](ConceptMap-ChAlisLateralityToSnomed.html) maps them to SNOMED CT. ValueSet expansions use the SNOMED CT Swiss Extension.
 
 #### Changed
