@@ -5,7 +5,6 @@ All significant changes to this FHIR implementation guide will be documented on 
 Resolution of the comments from the informative ballot 1.0.0-ballot, see [ballot overview](https://github.com/hl7ch/ch-alis-connect/blob/main/ballots/1.0.0-ballot.md).
 
 #### Added
-* Logical model [Header](StructureDefinition-Header.html), the root element of an ALIS XML file (header information and the Visits), so that complete ALIS XML files can be validated, e.g. with matchbox.
 * [#8](https://github.com/hl7ch/ch-alis-connect/issues/8): `Condition.bodySite` is bound (extensible) to the new ValueSet [CH ALIS Laterality (SNOMED CT)](ValueSet-ch-alis-connect-laterality-snomed.html) (Left, Right, Right and left). The new CodeSystem [CH ALIS Laterality](CodeSystem-ch-alis-connect-laterality.html) holds the ALIS values l, r, b, and the ConceptMap [CH ALIS Laterality to SNOMED CT](ConceptMap-ChAlisLateralityToSnomed.html) maps them to SNOMED CT. ValueSet expansions use the SNOMED CT Swiss Extension.
 
 #### Changed
@@ -21,6 +20,7 @@ Resolution of the comments from the informative ballot 1.0.0-ballot, see [ballot
 * Unique titles for the ParamTyp and PersonTyp ValueSets, a resolvable version of the v2-0092 ValueSet bound to `Encounter.hospitalization.reAdmission`, and broken links on the index page.
 * The elements of the logical models are named in lowerCamelCase (e.g. `Diagnosis.diagnosisCode`), as required for FHIR element names, and carry the ALIS XML name (e.g. `DiagnosisCode`) in the [xml-name](https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-xml-name.html) extension. ALIS XML documents are unchanged and validate as before; the element ids, and with them the JSON form of the logical models and the source codes of the Concept Maps, change.
 * The home page includes the IP statements, the cross version analysis and the dependency table.
+* The ValueSets and CodeSystems declare `experimental = false`, and the example identifier systems use `http://www.example.org/` instead of `http://www.example.ch/`.
 
 ### 1.0.0-ballot 
 

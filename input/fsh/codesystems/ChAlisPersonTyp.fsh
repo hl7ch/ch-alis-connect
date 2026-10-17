@@ -2,6 +2,7 @@ CodeSystem: ChAlisPersonTyp
 Id: ch-alis-connect-persontyp
 Title: "CH ALIS PersonTyp"
 Description: "This code system defines the PersonTyp."
+* ^experimental = false
 * ^content = #complete
 * #ResponsiblePhysician
 * #ProvidingPhysician

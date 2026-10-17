@@ -7,7 +7,7 @@ The figure on the left shows the structural design of the ALIS interface. The fi
 
 In a file based exchange 1..* Visits are documented. A single ALIS XML file carries a Header followed by one or more `Visit` elements; each Visit represents a patient case and contains 1..* `Service` elements (the accountable Leistungen), which in turn may carry nested Diagnosis, ServiceAssignment, SessionSectionB, PersonV40 and ParameterV40 information.
 
-The ALIS XML structure is mirrored 1:1 by a set of **logical models**. They are listed on the [Logical Models](logicalmodels.html) page. [Header](StructureDefinition-Header.html) describes a complete ALIS XML file and can be used to validate one, [Visit](StructureDefinition-Visit.html) is the entry point for a single patient case and its services.
+The ALIS XML structure is mirrored 1:1 by a set of **logical models**. They are listed on the [Logical Models](logicalmodels.html) page, with [Visit](StructureDefinition-Visit.html) as the entry point.
 
 Every `Visit/Service` maps to one [ChargeItem](StructureDefinition-ch-alis-connect-chargeitem.html), and the visit- and service-level data is distributed onto the ChargeItem together with the [Patient](StructureDefinition-ch-alis-connect-patient.html), [Encounter](StructureDefinition-ch-alis-connect-encounter.html) and [Condition](StructureDefinition-ch-alis-connect-condition.html) resources. The `ChargeItem.context` references the Encounter (the Visit) and `ChargeItem.subject` the Patient, so the Visit grouping is preserved.
 

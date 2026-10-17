@@ -12,7 +12,7 @@
             <code value="MR" />
           </coding>
         </type>
-        <system value="http://www.example.ch/patienteniddomain" />
+        <system value="http://www.example.org/patienteniddomain" />
         <value value="102" />
       </identifier>
       <name>
@@ -33,7 +33,7 @@
             <code value="VN" />
           </coding>
         </type>
-        <system value="http://www.example.ch/fallnummerdomain" />
+        <system value="http://www.example.org/fallnummerdomain" />
         <value value="987654" />
       </identifier>
       <status value="finished" />
@@ -125,13 +125,13 @@
   </performer>
   <performingOrganization>
     <identifier>
-      <system value="http://www.example.ch/organisationdomain" />
+      <system value="http://www.example.org/organisationdomain" />
       <value value="2400" />
     </identifier>
   </performingOrganization>
   <costCenter>
     <identifier>
-      <system value="http://www.example.ch/kostenstellendomain" />
+      <system value="http://www.example.org/kostenstellendomain" />
       <value value="007" />
     </identifier>
   </costCenter>
