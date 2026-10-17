@@ -1,6 +1,6 @@
 ValueSet: ChAlisPersonTyp
 Id: ch-alis-connect-persontyp
-Title: "CH ALIS PersonTyp"
+Title: "CH ALIS PersonTyp ValueSet"
 Description: "This value set defines the PersonTyp."
 * ChAlisPersonTyp#ResponsiblePhysician
 * ChAlisPersonTyp#ProvidingPhysician
