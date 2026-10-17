@@ -78,7 +78,10 @@
       </coding>
     </function>
     <actor>
-      <display value="7653253256988" />
+      <identifier>
+        <system value="urn:oid:2.51.1.3" />
+        <value value="7653253256988" />
+      </identifier>
     </actor>
   </performer>
   <performer>
@@ -89,14 +92,23 @@
       </coding>
     </function>
     <actor>
-      <display value="7653253256988" />
+      <identifier>
+        <system value="urn:oid:2.51.1.3" />
+        <value value="7653253256988" />
+      </identifier>
     </actor>
   </performer>
   <performingOrganization>
-    <display value="2400" />
+    <identifier>
+      <system value="http://www.example.ch/organisationdomain" />
+      <value value="2400" />
+    </identifier>
   </performingOrganization>
   <costCenter>
-    <display value="007" />
+    <identifier>
+      <system value="http://www.example.ch/kostenstellendomain" />
+      <value value="007" />
+    </identifier>
   </costCenter>
   <quantity>
     <value value="1" />

@@ -69,7 +69,10 @@
         </extension>
         <extension url="http://fhir.ch/ig/ch-alis-connect/StructureDefinition/ch-alis-connect-ext-serviceassignment">
           <extension url="OrderingProviderID">
-            <valueString value="7653253258966"/>
+            <valueIdentifier>
+              <system value="urn:oid:2.51.1.3"/>
+              <value value="7653253258966"/>
+            </valueIdentifier>
           </extension>
           <extension url="OrderSectionCode">
             <valueCoding>
@@ -99,10 +102,16 @@
         </context>
         <occurrenceDateTime value="2025-03-04T09:00:00Z"/>
         <performingOrganization>
-          <display value="2700"/>
+          <identifier>
+            <system value="http://www.example.ch/organisationdomain"/>
+            <value value="2700"/>
+          </identifier>
         </performingOrganization>
         <costCenter>
-          <display value="007"/>
+          <identifier>
+            <system value="http://www.example.ch/kostenstellendomain"/>
+            <value value="007"/>
+          </identifier>
         </costCenter>
         <quantity>
           <value value="1"/>

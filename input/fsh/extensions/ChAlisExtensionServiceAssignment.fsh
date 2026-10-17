@@ -12,9 +12,11 @@ Context: ChargeItem
 * extension[OrderingProviderID] only Extension
 * extension[OrderingProviderID] ^short = "OrderingProviderID"
 * extension[OrderingProviderID].url only uri
-* extension[OrderingProviderID].valueString 1..
-* extension[OrderingProviderID].valueString only string
-* extension[OrderingProviderID].valueString ^short = "OrderingProviderID"
+* extension[OrderingProviderID].valueIdentifier 1..
+* extension[OrderingProviderID].valueIdentifier only Identifier
+* extension[OrderingProviderID].valueIdentifier ^short = "OrderingProviderID"
+* extension[OrderingProviderID].valueIdentifier ^comment = "ALIS OrderingProviderID: GLN or local ID of the ordering provider. A GLN is sent with identifier.system = urn:oid:2.51.1.3, a local ID with the identifier system of the sender."
+* extension[OrderingProviderID].valueIdentifier.value 1..
 * extension[OrderSectionCode] only Extension
 * extension[OrderSectionCode] ^short = "OrderSectionCode"
 * extension[OrderSectionCode].url only uri
