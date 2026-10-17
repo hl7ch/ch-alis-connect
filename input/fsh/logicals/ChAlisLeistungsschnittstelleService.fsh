@@ -37,7 +37,7 @@ Description: "This logical model describes the Service of 'Leistungsschnittstell
 * itemNumber insert XmlName(ItemNumber)
 * refItemNumber 0..1 http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Text "3.15, Referenz Laufnummer zu Hauptleistung, Format von Pos. 3.11, Nur bei Nebenleistungen notwendig, Optional"
 * refItemNumber insert XmlName(RefItemNumber)
-* quantity 1..1 http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Decimal "3.16, Anzahl, Numerisch (Dezimal, d.h. Nachkommastellen sind möglich), eine negative Leistung ist möglich (+ / -), gebrochene Werte müssen beim Import in Systeme die nur ganzzahlige Mengen akzeptieren mit dem Wert aus dem Parameter <NumberofParticipants> auf eine ganze Zahl umgerechnet werden, Obligat; negative Werte sind zu vereinbaren"
+* quantity 1..1 http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Decimal "3.16, Anzahl, Numerisch (Dezimal, d.h. Nachkommastellen sind möglich), eine negative Leistung ist möglich (+ / -), gebrochene Werte müssen beim Import in Systeme die nur ganzzahlige Mengen akzeptieren mit dem Wert aus dem Parameter `NumberofParticipants` auf eine ganze Zahl umgerechnet werden, Obligat; negative Werte sind zu vereinbaren"
 * quantity insert XmlName(Quantity)
 * tPValue 0..1 http://fhir.ch/ig/ch-alis-connect/StructureDefinition/Decimal "3.17 (*) Taxpunktwert, Numerisch (Dezimal), TP-Wert der Leistung	Optional"
 * tPValue insert XmlName(TPValue)
