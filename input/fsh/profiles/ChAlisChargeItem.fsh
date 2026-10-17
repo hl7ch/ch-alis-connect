@@ -38,8 +38,8 @@ Description: "Base definition for the ChargeItem resource in the context of ALIS
 * extension[SLIndicationCode] ^short = "ParameterV40: SLIndicationCode"
 * status ^short = "billable | not-billable"
 * code.coding 1..
-* code.coding.system 1..
 * code.coding.system ^short = "ServiceType"
+* code.coding.system ^comment = "ALIS ServiceType is optional (3.7, 0..1). If the Service carries no ServiceType, the coding has no system and the tariff of ServiceItem has to be agreed between sender and receiver."
 * code.coding.code 1..
 * code.coding.code ^short = "ServiceItem"
 * subject only Reference(ChAlisPatient)
